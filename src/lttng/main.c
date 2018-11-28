@@ -52,8 +52,10 @@
 #include "lttng/rpcping.h"
 #include "lttng/xprt.h"
 
+#if 0
 /* This is a hack to make older versions of LTTng link */
 struct lttng_ust_tracepoint_dlopen tracepoint_dlopen
 	__attribute__((weak));
+#endif
 
 #endif /* USE_LTTNG_NTIRPC */
